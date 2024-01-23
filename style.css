@@ -23,7 +23,7 @@ body{background-color:rgb(24,23,23);overflow: hidden;}
 .destaque{color: rgb(84, 92, 182);}
 .aviso{color:rgb(208, 203, 195);font-family:'Dosis', sans-serif;margin-bottom: 14px;}
 
-.input{display: flex;flex-direction: column;width: 350px; margin-left: 100px;margin-top: 100px;}
+.input{display: flex;flex-direction: column;width: 350px; margin-left: 100px;margin-top: 100px;height: 350px}
 
 textarea{margin-bottom: 15px;background-color: transparent;padding: 7px; color: aliceblue;font-family: 'Dosis', sans-serif;}
 
@@ -44,15 +44,12 @@ textarea::placeholder{text-align: center;}
 
 .btn-descryp:active{top: 2px;position: relative;}
 
-.output{display: flex;flex-direction: column;width: 350px; margin-left: 750px;margin-top: -330px;}
+.output{display: flex;flex-direction: column;width: 350px; margin-left: 750px;margin-top: -370px;height: 257px}
 
 
-.alerta{isolation: isolate; 
-    color: aliceblue;font-size: 19px;text-shadow: 2px 2px 1px black;margin-left: 10px;margin-top:55px;margin-left: 30px;font-family: 'Dosis', sans-serif;}
+.alerta{isolation: isolate; color: aliceblue;font-size: 19px;text-shadow: 2px 2px 1px black;margin-left: 10px;margin-top:55px;margin-left: 30px;font-family: 'Dosis', sans-serif;width: 350px;height: 350px;}
 
 
- .message{isolation: isolate;padding:5%;color:aliceblue;font-size: 15px;text-shadow: 2px 2px 1px black;margin-left: 15px;font-family: 'Dosis', sans-serif;}
- 
 
  .fundo{width:350px;height: 350px;position: relative;border-radius: 7px;margin-bottom: 20px;} 
 
