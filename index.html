@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <main class="container">
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <a href="https://github.com/NatashaAngi" target="_blank"><img src="img/logo.jpg" alt="" class="logo"></a>
+
+        <h1 class="titulo">Codificando e descodificando textos</h1>
+    </header>
+     <!-- CABEÇALHO -->
+
+     <!-- AREA DE TEXTO -->
+    <div class="input">
+    <p class="aviso">ATENÇÃO: Apenas letras <span class="destaque">minúsculas </span>e <span class="destaque">sem acento</span> !</p>
+
+    <textarea name="" id="texto" cols="30" rows="10" placeholder="DIGITE AQUI!" class="escreva"></textarea>
+
+    <div class="container-bnt">
+        <button  onclick="criptografar()" class="btn-cryp">Criptografar</button>
+        <button  onclick="descriptografar()" class="btn-descryp">Descriptografar</button>
+     </div>
+
+    </div>
+    <!-- AREA DE TEXTO -->
+
+    <!-- AREA DE SAIDA -->
+    <div class="output" id="output">
+    
+        <div class="fundo">
+        <p class="alerta"> Nenhuma mensagem encontrada</p>
+        <p class="message">Digite um texto que deseja criptografar ou descriptografar.</p>
+        </div>
+
+        <div class="botao-copiar">
+        <button class="btn-copiar" onclick="copiar()" > Copiar</button>
+        </div>
+    </div>
+    <!-- AREA DE SAIDA -->
+    </main>
+
+    <footer> 
+         <div class="icons">
+        <a href="https://www.linkedin.com/in/natasha-angi/" target="_blank"><ion-icon name="logo-linkedin" ></ion-icon></a>
+        <a href="https://www.instagram.com/koalas_draw" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://github.com/NatashaAngi" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+    </div>
+
+    <h3>Desenvolvido por <span class="destaque"> Natasha Angi</span></h3>
+    </footer>
+    
+</body>
+</html>
