@@ -9,7 +9,7 @@ let texto = textInput.value;
   let resultCripto = texto.replace(/e/, "enter").replace(/i/, "imes").replace(/a/, "ai").replace(/o/, "ober").replace(/u/, "ufat")
 
   
-  document.getElementById('output').innerHTML = '<textarea readonly id="input-texto">' + resultCripto 
+  document.getElementById('output').innerHTML = '<textarea readonly id="texto">' + resultCripto + '</textarea>' 
  
 }
 
@@ -19,14 +19,15 @@ function descriptografar(){
 
     const resultDescripto = texto.replace(/enter/, "e").replace(/imes/, "i").replace(/ai/, "a").replace(/ober/, "o").replace(/ufat/, "u");
   
-    document.getElementById('output').innerHTML = '<textarea readonly id="input-texto">' + resultDescripto 
-    '</textarea>'}
+    document.getElementById('output').innerHTML = '<textarea readonly id="texto">' + resultDescripto+ '</textarea>' }
 
 
 function copiar() {
     let textoCop = document.getElementById('texto');
   
+    
     textoCop.select();
-    document.commandId('copy');
+    document.execCommand('copy');
     alert("Texto copiado.");
+    
 }  

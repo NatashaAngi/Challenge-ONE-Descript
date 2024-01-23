@@ -1,79 +1,223 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-
 *{
     border: none;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     margin: 0;
-    padding: 0;
-    /* font-family: 'Rubik', sans-serif; */
-}
-
-
-body{background-color:rgb(24,23,23);overflow: hidden;}
-
-
-.cabecalho{ display: flex; max-width: 900px;margin: auto; margin-right: 100px;margin-top: 40px; margin-bottom: 30px;}
-
-.titulo{margin-top: 10px; color:rgb(208, 203, 195);font-family: 'Dosis', sans-serif;;}
-
-.logo{max-width:70px;max-height:70px;border-radius: 50%;width: auto;height: auto;cursor: pointer;margin-top: 10px;margin-right: 15px;}
-
-.destaque{color: rgb(84, 92, 182);}
-.aviso{color:rgb(208, 203, 195);font-family:'Dosis', sans-serif;margin-bottom: 14px;}
-
-.input{display: flex;flex-direction: column;width: 350px; margin-left: 100px;margin-top: 100px;height: 350px}
-
-textarea{margin-bottom: 15px;background-color: transparent;padding: 7px; color: aliceblue;font-family: 'Dosis', sans-serif;}
-
-textarea::placeholder{text-align: center;}
-.escreva{border: 1px solid blue;border-radius: 7px;}
-
-.container-bnt{margin-left: 80px;gap: 30px;display: flex;}
-
-.btn-cryp{padding: 5px; border-radius: 7px;background-color: transparent;border: 1px solid blue;color: aliceblue; box-shadow: -2px 2px 2px black;font-family: 'Dosis', sans-serif;}
-
-.btn-cryp:hover{background-color: blue;border: 1px solid rgb(69, 221, 255); box-shadow: -2px 2px 2px black inset;}
-
-.btn-cryp:active{top: 2px;position: relative;}
-
-.btn-descryp{padding: 5px; border-radius: 7px;background-color: transparent;border: 1px solid blue;color: aliceblue; box-shadow: -2px 2px 2px black;font-family: 'Dosis', sans-serif;}
-
-.btn-descryp:hover{background-color: blue;border: 1px solid rgb(69, 221, 255); box-shadow: -2px 2px 2px black inset;}
-
-.btn-descryp:active{top: 2px;position: relative;}
-
-.output{display: flex;flex-direction: column;width: 350px; margin-left: 750px;margin-top: -370px;height: 257px}
-
-
-.alerta{isolation: isolate; color: aliceblue;font-size: 19px;text-shadow: 2px 2px 1px black;margin-left: 10px;margin-top:55px;margin-left: 30px;font-family: 'Dosis', sans-serif;width: 350px;height: 350px;}
-
-
-
- .fundo{width:350px;height: 350px;position: relative;border-radius: 7px;margin-bottom: 20px;} 
-
- .fundo::before{content: "";
-    background-image: url(img/AlbedoBase_XL_secret_agent_anime_style_0.jpg);background-position: center bottom; 
-    background-size: 300px;
-     background-repeat: no-repeat;
-     opacity: 0.8;position: absolute;
-     inset: 0;filter: blur(1px);} 
-
-
-.btn-copiar{padding: 5px; border-radius: 7px;background-color: transparent;border: 1px solid blue;color: aliceblue; box-shadow: -2px 2px 2px black; margin-left: 150px;font-family: 'Dosis', sans-serif;}
-
-.btn-copiar:hover{background-color: blue;border: 1px solid rgb(69, 221, 255); box-shadow: -2px 2px 2px black inset;}
-
-.btn-copiar:active{top: 2px;position: relative;}
-
-footer{display: flex;flex-direction: column;align-items: center;padding: 5px;margin-top: 15px;background:rgb(15, 14, 14);margin-top: 120px;padding-bottom: 5px;}
-
-footer h3{font-size: 16px;color: rgb(208, 203, 195);font-family: 'Dosis', sans-serif;}
-
-.icons ion-icon{width: 25px;height: 25px;color: rgb(88, 88, 205);}
-
-.icons ion-icon:hover{color: rgb(68, 227, 255);}
-
-.icons ion-icon:active{top: 2px;position: relative;} 
-
+    padding: 0;/* font-family: 'Rubik', sans-serif; */
+    }
+    .container {
+        background-color: rgb(24, 23, 23);
+        height: 80vh;
+        padding: 60px 140px;
+    }
+    
+    .cabecalho {
+        height: 10vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+    }
+    
+    .titulo {
+      margin-top: 10px;
+      color: rgb(208, 203, 195);
+      font-family: "Dosis", sans-serif;
+    }
+    
+    .logo {
+      max-width: 70px;
+      max-height: 70px;
+      border-radius: 50%;
+      width: auto;
+      height: auto;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-right: 15px;
+    }
+    
+    .destaque {
+      color: rgb(84, 92, 182);
+    }
+    .aviso {
+      color: rgb(208, 203, 195);
+      font-family: "Dosis", sans-serif;
+      margin-bottom: 14px;
+    }
+    
+    .input {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      height: 350px;
+    }
+    textarea {
+      margin-bottom: 15px;
+      background-color: transparent;
+      padding: 7px;
+      color: aliceblue;
+      font-family: "Dosis", sans-serif;
+    }
+    
+    textarea::placeholder {
+      text-align: center;
+    }
+    .escreva {
+      border: 1px solid blue;
+      border-radius: 7px;
+    }
+    
+    .container-bnt {
+      margin-left: 80px;
+      gap: 30px;
+      display: flex;
+    }
+    
+    .btn-cryp {
+      padding: 5px;
+      border-radius: 7px;
+      background-color: transparent;
+      border: 1px solid blue;
+      color: aliceblue;
+      box-shadow: -2px 2px 2px black;
+      font-family: "Dosis", sans-serif;
+      cursor: pointer;
+    }
+    
+    .btn-cryp:hover {
+      background-color: blue;
+      border: 1px solid rgb(69, 221, 255);
+      box-shadow: -2px 2px 2px black inset;
+    }
+    .btn-cryp:active {
+      top: 2px;
+      position: relative;
+    }
+    
+    .btn-descryp {
+      padding: 5px;
+      border-radius: 7px;
+      background-color: transparent;
+      border: 1px solid blue;
+      color: aliceblue;
+      box-shadow: -2px 2px 2px black;
+      font-family: "Dosis", sans-serif;
+      cursor: pointer;
+    }
+    
+    .btn-descryp:hover {
+      background-color: blue;
+      border: 1px solid rgb(69, 221, 255);
+      box-shadow: -2px 2px 2px black inset;
+    }
+    
+    .btn-descryp:active {
+      top: 2px;
+      position: relative;
+    }
+    
+    .output {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin-left: 750px;
+      margin-top: -370px;
+      height: 300px;
+      border: 1px solid blue;
+      border-radius: 7px;
+      z-index: 1;
+     
+    }
+    
+    .alerta {
+      isolation: isolate;
+      color: aliceblue;
+      font-size: 17px;
+      text-shadow: 2px 2px 1px black;
+      margin-left: 10px;
+      margin-top: 55px;
+      margin-left: 30px;
+      font-family: "Dosis", sans-serif;
+      width: 300px;
+      height: 300px;
+    }
+    
+    .fundo {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      border-radius: 7px;
+      margin-bottom: 20px;
+      border: 1px solid blue;
+    }
+    .fundo::before {
+      content: "";
+      background-image: url(img/AlbedoBase_XL_secret_agent_anime_style_0.jpg);
+      background-position: center bottom;
+      background-size: 300px;
+      background-repeat: no-repeat;
+      opacity: 0.8;
+      position: absolute;
+      inset: 0;
+      filter: blur(1px);
+    }
+    
+    .btn-copiar {
+      padding: 5px;
+      border-radius: 7px;
+      background-color: transparent;
+      border: 1px solid blue;
+      color: aliceblue;
+      box-shadow: -2px 2px 2px black;
+      margin-left: 100px;
+      margin-top: 0px;
+      font-family: "Dosis", sans-serif;
+      cursor: pointer;
+      width: 100px;
+      height: 50px;
+      z-index:100;
+    }
+    
+    .btn-copiar:hover {
+      background-color: blue;
+      border: 1px solid rgb(69, 221, 255);
+      box-shadow: -2px 2px 2px black inset;
+    }
+    
+    .btn-copiar:active {
+      top: 2px;
+      position: relative;
+    }
+    
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgb(15, 14, 14);
+      padding-bottom: 5px;
+      padding-top: 5px;
+      height: 10vh;
+    }
+    
+    footer h3 {
+      font-size: 16px;
+      color: rgb(208, 203, 195);
+      font-family: "Dosis", sans-serif;
+    }
+    
+    .icons ion-icon {
+      width: 25px;
+      height: 25px;
+      color: rgb(88, 88, 205);
+    }
+    
+    .icons ion-icon:hover {
+      color: rgb(68, 227, 255);
+    }
+    
+    .icons ion-icon:active {
+      top: 2px;
+      position: relative;
+    }
